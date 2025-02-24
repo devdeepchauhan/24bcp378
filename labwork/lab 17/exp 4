@@ -1,0 +1,7 @@
+# ceate a lsit of ttuples containing a food item and its price.Sort the tuples in desending order by price.
+
+food_items = [("burger",120), ("pizza", 250), ("pakwan", 180), ("sandwich", 90), ("cold coco", 150)]
+sorted_food_items = sorted(food_items, key=lambda x: x[1], reverse=True)
+print("Food items sorted by price (descending order):")
+for item in sorted_food_items:
+    print(item)

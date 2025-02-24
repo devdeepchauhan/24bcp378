@@ -1,0 +1,17 @@
+# A list contains tuples containing ro;; number ,name,and age of student.weit a python program to create three lists seprated ffor roll number and name and age
+
+def separate_student_data(s_list):
+    roll_numbers = [s[0] for s in s_list]
+    names = [s[1] for s in s_list]
+    ages = [s [2] for s in s_list]
+
+    return roll_numbers, names, ages
+
+
+students = [(101, "raju", 20), (102, "Bablu", 22), (103, "Charlie", 21), (104, "tillu", 23)]
+
+roll_numbers, names, ages = separate_student_data(students)
+
+print("Roll Numbers:", roll_numbers)
+print("Names:", names)
+print("Ages:", ages)

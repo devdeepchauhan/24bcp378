@@ -1,0 +1,8 @@
+# Remove empty tuples frm the list of tuples
+
+def remove_empty_tuples(tuple_list):
+    return [t for t in tuple_list if t] 
+
+tuples_list = [(), (1, 2, 3), (), ("apple", "banana"), (10,), (), ("Python",)]
+filtered_list = remove_empty_tuples(tuples_list)
+print("List after removing empty tuples:", filtered_list)
